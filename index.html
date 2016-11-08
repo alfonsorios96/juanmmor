@@ -1,55 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link href="tools/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="tools/jquery.min.js"></script> 
-<script type="text/javascript" src="tools/cufon-yui.js"></script>
-<script type="text/javascript" src="tools/Comfortaa_250-Comfortaa_700.font.js"></script>
-<script type="text/javascript">
-	Cufon.replace('h1', {fontFamily: 'Comfortaa'});
-	Cufon.replace('p.c_soon strong', {fontFamily: 'Comfortaa'});
-</script>
+<!DOCTYPE html>
+<html lang="en-US" class="backgroundSlider">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="http://webnovant.com">
+        
+        <title>JUANMMOR | Próximamente</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Lemon' rel='stylesheet' type='text/css'>
+        
+        <link rel="shortcut icon" href="images/favicon.jpg">
 
-</head>
-<body>
-<div class="content_wrapper">
-	<div class="top_content">
-		<div class="header">
-			<div class="iphone">
-				<img src="images/image.jpg" alt="" />
-			</div>
-			<div class="logo_content">
-				<h1><strong>JUAN</strong>MMOR</h1>
-				<h3>The <strong>EASIEST</strong> way to know, <strong>wat to JUAN next?</strong></h3>
-				<p>Duis est orci, accumsan ut hendrerit sed, semper eget nulla. Cras ullamcorper sapien ut dui faucibus vulputate. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-				<a href="#" class="get_notified"><strong>Get Notified</strong> on the day of launch!</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="shadow"></div>
-	<div class="white_content">
-		<div class="top_content">
-			<div class="header">
-				<div class="coming_soon">
-					<p class="c_soon">we're <br/> <strong>Coming Soon</strong> <br/> to your iPhone</p>
-				</div>
-				
-				<ul class="social">
-					<li><a href="#" class="googleplus">google plus</a></li>
-					<li><a href="#" class="twitter">twitter</a></li>
-					<li><a href="#" class="facebook">facebook</a></li>
-					<li><a href="#" class="email">email</a></li>
-					<li><a href="#" class="youtube">youtube</a></li>
-					<li><a href="#" class="pinterest">pinterest</a></li>
-				</ul>
-				
-				<div class="copyright"><p>Copyright 2016. <br/> All Rights Reserved. <br/> <span><strong>JUAN</strong>MMOR</span></p></div>
-			</div>
-		</div>
-	</div>
-</div>
-</body>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="css/YTPlayer.css" />
+        <link rel="stylesheet" type="text/css" href="css/supersized.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+        
+    </head>
+    <body id="backgroundImages">
+
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="section clearfix">
+                        <h1 class="logo animated fadeInDown">La fotografía como nunca antes.</h1>
+                        
+                        <div id="text_slider">
+                            <div class="slide clearfix"><h2>Estamos trabajando en ello</h2></div>
+
+                            <div class="slide clearfix"><h2>Espéralo pronto</h2></div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- COUNTDOWN -->
+                    <div class="section clearfix animated fadeIn" id="countdown">
+                        <!-- Days -->
+                        <div class="countdown_group">
+                            <span class="countdown_value">{dnn}</span> 
+                            <span class="countdown_help">{dl}</span>
+                        </div>
+
+                        <!-- Hours --> 
+                        <div class="countdown_group">
+                            <span class="countdown_value">{hnn}</span> 
+                            <span class="countdown_help">{hl}</span>
+                        </div> 
+
+                        <!-- Minutes -->
+                        <div class="countdown_group">
+                            <span class="countdown_value">{mnn}</span> 
+                            <span class="countdown_help">{ml}</span> 
+                        </div>
+
+                        <!-- Seconds -->
+                        <div class="countdown_group">
+                            <span class="countdown_value">{snn}</span> 
+                            <span class="countdown_help">{sl}</span>
+                        </div>
+                    </div>
+                    <!-- END COUNTDOWN -->
+
+                    <div class="backgroundImage logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+
+		<!-- JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.plugin.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/supersized.min.js"></script>
+        <script src="js/jquery.cycle.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.js"></script>
+        <script src="js/scripts.js"></script>
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </body>
 </html>
