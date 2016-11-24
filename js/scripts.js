@@ -2,15 +2,18 @@ $(function () {
     
 	//Background images slider
 	$('.backgroundSlider').supersized({
-		slide_interval : 2000, // Length between transitions
+		slide_interval : 5000, // Length between transitions
 		transition : 6, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
 		transition_speed : 500, // Speed of transition
 		slide_links : false, // Individual links for each slide (Options: false, 'num', 'name', 'blank')
 		slides : [
 			{image : 'images/bg1.jpg', title : '', thumb : '', url : ''},
-			{image : 'images/bg3.jpg', title : '', thumb : '', url : ''},
+			{image : 'images/bg6.jpg', title : '', thumb : '', url : ''},
 			{image : 'images/bg2.jpg', title : '', thumb : '', url : ''},
-			{image : 'images/bg4.jpg', title : '', thumb : '', url : ''}
+			{image : 'images/bg3.jpg', title : '', thumb : '', url : ''},
+			{image : 'images/bg4.jpg', title : '', thumb : '', url : ''},
+			{image : 'images/bg7.jpg', title : '', thumb : '', url : ''},
+			{image : 'images/bg5.jpg', title : '', thumb : '', url : ''}
 		]
 	});
         
@@ -72,5 +75,5 @@ $(function () {
 });
 
 var someDate = new Date("2016-11-8");
-var numberOfDaysToAdd = 30;
+var numberOfDaysToAdd = 60;
 someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 

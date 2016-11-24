@@ -15,6 +15,10 @@ body
     /* Margin bottom by footer height (sticky)  */
     margin-bottom: 80px;
 }
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
 .select_versions body
 {
     background: #378e95;
@@ -43,6 +47,13 @@ body
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.logo-img{
+    margin-top: 30px;
+    margin-left: auto; 
+    margin-right: auto; 
+    height: 35%; 
+    width: 35%;
 }
 h1, h2, h3, h4, h5, h6 
 {
