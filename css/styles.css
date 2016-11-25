@@ -15,6 +15,10 @@ body
     /* Margin bottom by footer height (sticky)  */
     margin-bottom: 80px;
 }
+h1, h2, span {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .img-responsive{
   max-width: 100%;
   height: auto;
@@ -68,11 +72,11 @@ h1.logo
 {
     font-size: 45px;
     padding-top: 100px;
-    font-family: 'Lemon', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 h2.logo 
 {
-    font-family: 'Lemon', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 h2
 {
@@ -80,7 +84,7 @@ h2
 }
 h3.logo 
 {
-    font-family: 'Lemon', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 h3
 {

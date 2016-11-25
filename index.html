@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-US" class="backgroundSlider">
+<html lang="en-US" class="backgroundSlider" ng-app="app">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="http://webnovant.com">
         
         <title>JUANMMOR | Próximamente</title>
-        
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Lemon' rel='stylesheet' type='text/css'>
         
         <link rel="shortcut icon" href="images/favicon.jpg">
 
@@ -21,7 +19,7 @@
 
         
     </head>
-    <body id="backgroundImages">
+    <body id="backgroundImages" ng-controller="clockCtrl">
 
         <!-- CONTAINER -->
         <div class="container">
@@ -29,7 +27,7 @@
                 <div class="col-md-12">
 
                     <div class="section clearfix">
-                        <h1 class="logo animated fadeInDown">Esto es lo que hacemos.</h1>
+                        <h1 class="logo animated fadeInDown">{{eventDay.title}}</h1>
                         
                         <div id="text_slider">
                             <div class="slide clearfix"><h2>Estamos trabajando en ello</h2></div>
@@ -43,26 +41,26 @@
                     <div class="section clearfix animated fadeIn" id="countdown">
                         <!-- Days -->
                         <div class="countdown_group">
-                            <span class="countdown_value">{dnn}</span> 
-                            <span class="countdown_help">{dl}</span>
+                            <span class="countdown_value">{{manager.daysLeft}}</span> 
+                            <span class="countdown_help">Días</span>
                         </div>
 
                         <!-- Hours --> 
                         <div class="countdown_group">
-                            <span class="countdown_value">{hnn}</span> 
-                            <span class="countdown_help">{hl}</span>
+                            <span class="countdown_value">{{manager.hoursLeft}}</span> 
+                            <span class="countdown_help">Horas</span>
                         </div> 
 
                         <!-- Minutes -->
                         <div class="countdown_group">
-                            <span class="countdown_value">{mnn}</span> 
-                            <span class="countdown_help">{ml}</span> 
+                            <span class="countdown_value">{{manager.minutesLeft}}</span> 
+                            <span class="countdown_help">Minutos</span> 
                         </div>
 
                         <!-- Seconds -->
                         <div class="countdown_group">
-                            <span class="countdown_value">{snn}</span> 
-                            <span class="countdown_help">{sl}</span>
+                            <span class="countdown_value">{{manager.secondsLeft}}</span> 
+                            <span class="countdown_help">Segundos</span>
                         </div>
                     </div>
                     <!-- END COUNTDOWN -->
@@ -79,11 +77,12 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.plugin.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
         <script src="js/supersized.min.js"></script>
         <script src="js/jquery.cycle.min.js"></script>
         <script src="js/jquery.mb.YTPlayer.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
         
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
